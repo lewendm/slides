@@ -1,9 +1,6 @@
 ---
 output:
-  xaringan::moon_reader:
-    # ... other xaringan options ...
-    nature:
-      ratio: 191:100
+  xaringan::moon_reader
 ---
 
 ```{r setup, include=FALSE}
