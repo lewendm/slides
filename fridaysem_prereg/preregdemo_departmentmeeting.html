@@ -3,7 +3,7 @@
   <head>
     <title>preregdemo_departmentmeeting.knit</title>
     <meta charset="utf-8" />
-    <script src="preregdemo_departmentmeeting_files/header-attrs-2.8/header-attrs.js"></script>
+    <script src="preregdemo_departmentmeeting_files/header-attrs-2.11/header-attrs.js"></script>
     <link href="preregdemo_departmentmeeting_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="preregdemo_departmentmeeting_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <meta name="github-repo" content="lewendm/slides"/>
@@ -53,7 +53,7 @@ class: center, middle
 # Preregistration ≠ Registered Report
 A journal article that involves peer-review before
 data collection. Acceptance/rejection not based on results.
-&lt;img src="regreport.png" width="400px"/&gt;
+&lt;img src="regreport.PNG" width="400px"/&gt;
 https://www.cos.io/initiatives/registered-reports
 ---
 class: center, middle 
@@ -139,7 +139,7 @@ class: center, middle
 ---
 class: center, middle 
 # Preregistration on the Open Science Framework
-![](prereg.png){width=30%}
+![](prereg.PNG){width=30%}
 ---
 ### Possible to update preregistration (new feature)
 .pull-left[&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Even the best laid plans sometimes don&amp;#39;t go as expected in reality. In a major OSF update released today, you can now transparently report changes in your preregistrations to help others understand what changed and why.&lt;br&gt;&lt;br&gt;The interface makes it easy for readers to see what changed &lt;a href="https://t.co/lFD2luZWOF"&gt;pic.twitter.com/lFD2luZWOF&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brian Nosek (@BrianNosek) &lt;a href="https://twitter.com/BrianNosek/status/1466814366469218317?ref_src=twsrc%5Etfw"&gt;December 3, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
@@ -239,7 +239,11 @@ class: center, middle
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
@@ -304,7 +308,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 slideshow._releaseMath = function(el) {

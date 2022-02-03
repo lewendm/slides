@@ -1,6 +1,11 @@
 ---
 output:
-  xaringan::moon_reader
+  xaringan::moon_reader:
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+    seal: true
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +60,7 @@ class: center, middle
 # Preregistration ≠ Registered Report
 A journal article that involves peer-review before
 data collection. Acceptance/rejection not based on results.
-<img src="regreport.png" width="400px"/>
+<img src="regreport.PNG" width="400px"/>
 https://www.cos.io/initiatives/registered-reports
 ---
 class: center, middle 
@@ -141,7 +146,7 @@ class: center, middle
 ---
 class: center, middle 
 # Preregistration on the Open Science Framework
-![](prereg.png){width=30%}
+![](prereg.PNG){width=30%}
 ---
 ### Possible to update preregistration (new feature)
 .pull-left[<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Even the best laid plans sometimes don&#39;t go as expected in reality. In a major OSF update released today, you can now transparently report changes in your preregistrations to help others understand what changed and why.<br><br>The interface makes it easy for readers to see what changed <a href="https://t.co/lFD2luZWOF">pic.twitter.com/lFD2luZWOF</a></p>&mdash; Brian Nosek (@BrianNosek) <a href="https://twitter.com/BrianNosek/status/1466814366469218317?ref_src=twsrc%5Etfw">December 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
