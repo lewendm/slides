@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>preregdemo_departmentmeeting.knit</title>
+    <meta charset="utf-8" />
+    <script src="preregdemo_departmentmeeting_files/header-attrs-2.8/header-attrs.js"></script>
+    <link href="preregdemo_departmentmeeting_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="preregdemo_departmentmeeting_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <meta name="github-repo" content="lewendm/slides"/>
+    <meta name="twitter:title" content="Build your own universe"/>
+    <meta name="twitter:description" content="Scale high-quality research data provisioning with R packages. Presented at R/Medicine 2020."/>
+    <meta name="twitter:url" content="https://build-your-own-universe.netlify.app"/>
+    <meta name="twitter:image" content="https://build-your-own-universe.netlify.app/social-card.png"/>
+    <meta name="twitter:image:alt" content="Title slide of Build your own universe: Scale high-quality research data provisioning with R packages, presented at R/Medicine 2020 by Travis Gerke and Garrick Aden-Buie"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@LewendM"/>
+    <meta name="twitter:site" content="@LewendM"/>
+    <meta property="og:title" content="Build your own universe"/>
+    <meta property="og:description" content="Scale high-quality research data provisioning with R packages. Presented at R/Medicine 2020."/>
+    <meta property="og:url" content="https://build-your-own-universe.netlify.app"/>
+    <meta property="og:image" content="https://build-your-own-universe.netlify.app/social-card.png"/>
+    <meta property="og:image:alt" content="Title slide of Build your own universe: Scale high-quality research data provisioning with R packages, presented at R/Medicine 2020 by Travis Gerke and Garrick Aden-Buie"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Travis Gerke"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+class: inverse, center, middle
+background-image: url(background1.jpg)
+background-size: cover
+# Preregistration
+&lt;img src="popper2.png" width="150px"/&gt;
+### WHAT, WHY, WHEN, HOW?
+.large[Lewend Mayiwar | LOB Friday Seminar | 4 Feb 2022]
+
+---
+background-image:url(https://media.giphy.com/media/xUA7aLpVxPVEoEPXji/giphy-downsized-large.gif)
+background-size: cover
+---
+class: center, middle 
+# What is a preregistration? 😐 
+A time-stamped record that outlines hypotheses, method, and analytical plan,
+**before** data collection.
+---
+class: center, middle
+# Preregistration ≠ Registered Report
+A journal article that involves peer-review before
+data collection. Acceptance/rejection not based on results.
+&lt;img src="regreport.png" width="400px"/&gt;
+https://www.cos.io/initiatives/registered-reports
+---
+class: center, middle 
+# Benefits of preregistration vs. registered report
+(Source https://doi.org/10.31222/osf.io/x7aqr)
+&lt;img src="benefits.png" width="90%"/&gt;
+---
+class: center, middle 
+# Why preregister? 🤷🏽
+## 1️⃣Clear distinction between "confirmatory" and exploratory research.
+&lt;img src="prereg1.jpg" width="700px"/&gt;
+Source:https://osf.io/zjrhu/
+---
+class: center, middle 
+# Why preregister?
+## 1️⃣Clear distinction between "confirmatory" and exploratory research.
+&lt;img src="prereg2.jpg" width="700px"/&gt;
+Source:https://osf.io/zjrhu/
+---
+class: center, middle
+# Why preregister?
+## 2️⃣Get your head around your research.
+&lt;img src="prereg4.jpg" width="900px"/&gt;
+Source:https://osf.io/zjrhu/
+---
+class: center, middle
+# Why preregister?
+## 3️⃣Take credit for your ideas.
+.center[&lt;img src="prereg6.png" width="400px"/&gt;]
+Source:https://osf.io/zjrhu/
+---
+class: center, middle
+# Why preregister?
+## 4️⃣Build your reputation.
+&lt;img src="prereg5.jpg" width="900px"/&gt;
+Source:https://osf.io/zjrhu/
+---
+class: center, middle
+# Why preregister?
+## 5️⃣Comply with new regulations and standards.
+&lt;img src="prereg7.PNG" width="700px"/&gt;
+---
+# A preregistration **does not**...
+--
+
+###Stifle creativity.
+--
+
+###Does not automatically make a study better than a non-preregistered study.
+--
+
+###Solve p-hacking.
+--
+
+###Solve the file-drawer problem.
+---
+class: center, middle 
+# What preregistration **actually** does 😮
+--
+
+###Allows others to transparently determine the severity of a test.
+--
+
+###Distinguishes between hypothesis-testing and exploratory research.
+--
+
+###**Saves** time and helps your future self.
+--
+
+###Helps you to identify problems early on.
+---
+class: center, top
+
+###Deviations are often necessary
+.center[&lt;img src="lakens1.jpg" width="50%"/&gt;]
+.footnote[http://daniellakens.blogspot.com/2021/10/not-all-flexibility-p-hacking-is-young.html]
+---
+class: center, middle
+###Sometimes, you're not ready for hypothesis-testing
+.pull-left[&lt;img src="lakens2.PNG" width="150%"/&gt;]
+
+.pull-right[&lt;img src="batman.jpg" width="500px"/&gt;]
+---
+class: center, middle 
+# Preregistration on the Open Science Framework
+![](prereg.png){width=30%}
+---
+### Possible to update preregistration (new feature)
+.pull-left[&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Even the best laid plans sometimes don&amp;#39;t go as expected in reality. In a major OSF update released today, you can now transparently report changes in your preregistrations to help others understand what changed and why.&lt;br&gt;&lt;br&gt;The interface makes it easy for readers to see what changed &lt;a href="https://t.co/lFD2luZWOF"&gt;pic.twitter.com/lFD2luZWOF&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brian Nosek (@BrianNosek) &lt;a href="https://twitter.com/BrianNosek/status/1466814366469218317?ref_src=twsrc%5Etfw"&gt;December 3, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+]
+--
+.pull-right[&lt;img src="preregupdatecrop.jpg" width="600px"/&gt;]
+---
+class: center
+## Interested in open science? Join our **ReproducibiliTea** meetings/workshops!
+&lt;img src="repro.jpg" width="650px"/&gt;
+
+---
+
+class: center, middle
+# Tips 💡
+--
+
+Don't have clear hypotheses? Consider exploratory study to derive hypotheses.
+
+--
+
+Try to estimate your effect size (e.g., meta-analysis).
+
+--
+
+Run power analysis to calculate required N to detect effect size.
+
+--
+
+Ask colleagues to review your preregistration.
+
+--
+
+Find a preregistration that fits your planned study, use as template.
+
+--
+
+The more detailed the prereg, the better. But start with small steps.
+
+--
+
+Increase power by preregistering one-tailed tests (http://daniellakens.blogspot.com/2016/03/one-sided-tests-efficient-and-underused.html).
+
+---
+
+class: center, middle
+###Preregistration anxiety is real, in the beginning. But don't let that kill your research joy! 
+
+###Exploration and deviation should be expected. Preregistration simply makes this clear.
+
+&lt;img src="joy.png" width="350px"/&gt;
+
+---
+
+class: top, left
+
+# Tools 🧰
+--
+
+"The preregistration revolution" Nosek et al. (2018; https://doi.org/10.1073/pnas.1708274114)
+
+--
+
+Preregistration template for **qualitative** research: https://osf.io/6z2hr
+
+--
+
+Preregistration template for **systematic reviews**: https://osf.io/by27q/
+
+--
+
+Preregistration template for **secondary data**: https://psyarxiv.com/hvfmr/
+
+--
+
+Free power analysis software (although limited functionality):https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower
+
+--
+
+*pwr* (power analysis) package in R:https://cran.r-project.org/web/packages/pwr/pwr.pdf
+
+--
+
+Power analysis for **mediation analysis**:http://marlab.org/power_mediation/
+
+--
+
+**Sample size justification** app:https://shiny.ieis.tue.nl/sample_size_justification/
+
+--
+
+More tools here: https://wiki.mgto.org/doku.php/r_shiny_apps (Gilad Feldman)
+
+---
+class: center, middle
+# Let's preregister a study 📑
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "191:100"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
