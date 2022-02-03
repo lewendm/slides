@@ -25,8 +25,8 @@ meta() %>%
       "Quick intro to preregistration.",
       "Presented at BI Norwegian Business School 2022"
     ),
-    url = "https://lewendm.github.io/slides/fridaysem_prereg/prereg_LOBsem.html",
-    image = "https://lewendm.github.io/slides/fridaysem_prereg/social-card.png",
+    url = "https://lewendm.github.io/slides/prereg_LOBsem.html",
+    image = "https://lewendm.github.io/slides/images/social-card.png",
     image_alt = paste(
       "Title slide of Preregistration (what, why, how)",
       "Quick intro to preregistration.",
