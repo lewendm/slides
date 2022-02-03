@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE, message = FALSE,
 ```{r metathis, echo=FALSE}
 library(metathis)
 meta() %>%
-  meta_name("github-repo" = "lewendm/slides") %>%
+  meta_name("github-repo" = "lewendm/slides/fridaysem_prereg") %>%
   meta_social(
     title = "Preregistration (what, why, how)",
     description = paste(
