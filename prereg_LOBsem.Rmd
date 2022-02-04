@@ -1,6 +1,7 @@
 ---
 output:
   xaringan::moon_reader:
+    lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
@@ -62,46 +63,64 @@ class: center, middle
 A journal article that involves peer-review before
 data collection. Acceptance/rejection not based on results.
 <img src="images/regreport.PNG" width="400px"/>
-https://www.cos.io/initiatives/registered-reports
+
+```{css eval=TRUE, echo=FALSE}
+.fade { 
+  opacity: 0.5; 
+}
+```
+
+.fade[https://www.cos.io/initiatives/registered-reports]
 ---
 class: center, middle 
 # Benefits of preregistration vs. registered report
-(Source https://doi.org/10.31222/osf.io/x7aqr)
+.fade[Source https://doi.org/10.31222/osf.io/x7aqr]
 <img src="images/benefits.png" width="80%"/>
 ---
 class: center, middle 
 # Why preregister? `r emo::ji("person_shrugging_medium_skin_tone")`
 ## `r emo::ji("keycap_1")`Clear distinction between "confirmatory" and exploratory research.
 <img src="images/prereg1.jpg" width="700px"/>
-Source:https://osf.io/zjrhu/
+
+.fade[Source:https://osf.io/zjrhu/]
 ---
 class: center, middle 
 # Why preregister?
 ## `r emo::ji("keycap_1")`Clear distinction between "confirmatory" and exploratory research.
 <img src="images/prereg2.jpg" width="700px"/>
-Source:https://osf.io/zjrhu/
+.fade[Source:https://osf.io/zjrhu/]
 ---
 class: center, middle
 # Why preregister?
-## `r emo::ji("keycap_2")`Get your head around your research.
+### `r emo::ji("keycap_2")`Mitigates (some) poor research practices and biases.
+
+.center[
+<img src="images/prereg3.jpg" width="600px"/>
+]
+
+ .fade[Munafo et al. (2017)]
+---
+class: center, middle
+# Why preregister?
+## `r emo::ji("keycap_3")`Get your head around your research.
 <img src="images/prereg4.jpg" width="900px"/>
-Source:https://osf.io/zjrhu/
+.fade[Source:https://osf.io/zjrhu/]
 ---
 class: center, middle
 # Why preregister?
-## `r emo::ji("keycap_3")`Take credit for your ideas.
+## `r emo::ji("keycap_4")`Take credit for your ideas.
 .center[<img src="images/prereg6.png" width="400px"/>]
-Source:https://osf.io/zjrhu/
+.fade[Source:https://osf.io/zjrhu/]
 ---
 class: center, middle
 # Why preregister?
-## `r emo::ji("keycap_4")`Build your reputation.
+## `r emo::ji("keycap_5")`Build your reputation.
 <img src="images/prereg5.jpg" width="900px"/>
-Source:https://osf.io/zjrhu/
+.fade[Source:https://osf.io/zjrhu/]
 ---
 class: center, middle
 # Why preregister?
-## `r emo::ji("keycap_5")`Comply with new regulations and standards.
+## `r emo::ji("keycap_6")`Comply with new requirements and standards.
 <img src="images/prereg7.PNG" width="700px"/>
 ---
 # A preregistration **does not**...
@@ -146,7 +165,7 @@ class: center, middle
 .pull-right[<img src="images/batman.jpg" width="500px"/>]
 ---
 class: center, middle 
-# Preregistration on the Open Science Framework
+## Preregistration on the Open Science Framework (OSF)
 <img src="images/prereg.PNG" width="550px"/>
 ---
 ### Possible to update preregistration (new feature)
