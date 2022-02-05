@@ -31,7 +31,7 @@ meta() %>%
       "Presented at BI Norwegian Business School 2022"
     ),
     url = "https://lob-prereg.netlify.app",
-    image = "https://lob-prereg.netlify.app/social-card.png",
+    image = "https://lob-prereg.netlify.app/social-card.jpg",
     image_alt = paste(
       "Title slide of Preregistration (what, why, how)",
       "Quick intro to preregistration.",
