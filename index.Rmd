@@ -19,6 +19,10 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE, message = FALSE,
 library(metathis)
 library(tidyverse)
 meta() %>%
+  meta_general(
+    description = "A gentle introduction to reproducible data workflows with the {drake} package.",
+    generator = "xaringan and remark.js"
+  ) %>%
   meta_name("github-repo" = "lewendm/slides") %>%
   meta_social(
     title = "Preregistration (what, why, how)",
@@ -35,7 +39,7 @@ meta() %>%
     ),
     og_type = "website",
     og_author = "Lewend Mayiwar",
-    twitter_card_type = "summary_large_image",
+    twitter_card_type = "summary",
     twitter_creator = "@LewendM"
   )
 ```
