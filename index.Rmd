@@ -21,7 +21,7 @@ library(tidyverse)
 meta() %>%
   meta_general(
     description = "A gentle introduction to reproducible data workflows with the {drake} package.",
-    generator = "xaringan and remark.js"
+    generator = "xaringan"
   ) %>%
   meta_name("github-repo" = "lewendm/slides") %>%
   meta_social(
