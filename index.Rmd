@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE, message = FALSE,
 
 ```
 
-```{r metathis, echo=FALSE}
+```{r metathis, echo=FALSE, eval=TRUE}
 library(metathis)
 library(tidyverse)
 meta() %>%
